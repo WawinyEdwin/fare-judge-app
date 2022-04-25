@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLayout">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/review_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/establishment_name_text"
+                android:layout_width="183dp"
+                android:layout_height="22dp"
+                android:drawableStart="@drawable/ic_baseline_assignment_24"
+                android:drawablePadding="5dp"
+                android:text="Establishment Name "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.042" />
+
+            <TextView
+                android:id="@+id/user_id_text"
+                android:layout_width="72dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="260dp"
+                android:drawableStart="@drawable/ic_baseline_verified_user_24"
+                android:drawablePadding="5dp"
+                android:text="MyID"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.94"
+                app:layout_constraintStart_toStartOf="@+id/review_id_text"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.571" />
+
+            <TextView
+                android:id="@+id/establishment_type_text"
+                android:layout_width="83dp"
+                android:layout_height="19dp"
+                android:layout_marginEnd="76dp"
+                android:drawableStart="@drawable/ic_baseline_restaurant_24"
+                android:drawablePadding="5dp"
+                android:text="Type"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.98"
+                app:layout_constraintStart_toStartOf="@+id/review_id_text"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.354" />
+
+            <TextView
+                android:id="@+id/food_served_text"
+                android:layout_width="67dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="88dp"
+                android:drawableStart="@drawable/ic_baseline_fastfood_24"
+                android:drawablePadding="5dp"
+                android:text="Foods"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="@+id/review_id_text"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.578" />
+
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_width="96dp"
+                android:layout_height="21dp"
+                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                android:drawablePadding="5dp"
+                android:text="Location"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.159"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.341" />
+
+            <TextView
+                android:id="@+id/review_text"
+                android:layout_width="98dp"
+                android:layout_height="21dp"
+                android:layout_marginEnd="164dp"
+                android:drawableStart="@drawable/ic_baseline_create_24"
+                android:drawablePadding="5dp"
+                android:text="Review"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/review_id_text"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.973" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
