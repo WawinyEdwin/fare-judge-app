@@ -48,14 +48,20 @@ public class UpdateActivity extends AppCompatActivity {
         update_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateActivity.this);
-                user_id = user_id_input.getText().toString().trim();
-                establishment_name = establishment_name_input.getText().toString().trim();
-                establishment_type = establishment_type_input.getText().toString().trim();
-                food_served = food_served_input.getText().toString().trim();
-                location = location_input.getText().toString().trim();
-                review = review_input.getText().toString().trim();
-                myDB.updateData(id, user_id, establishment_name, establishment_type, food_served, location, review);
+
+                if(user_id_input.getText().toString().isEmpty() || establishment_name_input.getText().toString().isEmpty() ||
+                        establishment_type_input.getText().toString().isEmpty() || review_input.getText().toString().isEmpty()) {
+                    Toast.makeText(UpdateActivity.this, "Please fill in all required fields", Toast.LENGTH_SHORT).show();
+                } else {
+                    MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateActivity.this);
+                    user_id = user_id_input.getText().toString().trim();
+                    establishment_name = establishment_name_input.getText().toString().trim();
+                    establishment_type = establishment_type_input.getText().toString().trim();
+                    food_served = food_served_input.getText().toString().trim();
+                    location = location_input.getText().toString().trim();
+                    review = review_input.getText().toString().trim();
+                    myDB.updateData(id, user_id, establishment_name, establishment_type, food_served, location, review);
+                }
             }
         });
 

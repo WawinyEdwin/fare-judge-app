@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="176dp"
-        android:text="No data"
+        android:text="No Reviews, Tap the + button to add!"
         android:textSize="20sp"
         android:alpha="0.4"
         android:visibility="gone"

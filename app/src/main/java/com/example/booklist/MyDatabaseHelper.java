@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
+
 public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     private Context context;
@@ -65,9 +67,9 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         
         long result = db.insert(TABLE_NAME, null, cv);
         if(result == -1) {
-            Toast.makeText(context, "Failed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Failed to Add Review", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(context, "Added Successfully",Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Review Added Successfully",Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -81,6 +83,17 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         }
         return cursor;
     }
+//
+//    Cursor readEstablishments() {
+//         String query = "SElECT " + COLUMN_ESTABLISHMENT_NAME + " FROM " + TABLE_NAME;
+//         SQLiteDatabase db = this.getReadableDatabase();
+//
+//         Cursor cursor = null;
+//         if(db != null) {
+//             cursor = db.rawQuery(query, null);
+//         }
+//         return cursor;
+//    }
 
     void updateData(String row_id, String user_id, String establishment_name, String establishment_type, String food_served, String location, String review){
          SQLiteDatabase db = this.getWritableDatabase();
@@ -116,4 +129,5 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
          SQLiteDatabase db = this.getWritableDatabase();
          db.execSQL("DELETE FROM " + TABLE_NAME);
     }
+
 }

@@ -132,4 +132,54 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.663" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="259dp"
+        android:layout_height="24dp"
+        android:text="Please fill in the review info!"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="237dp"
+        android:layout_height="25dp"
+        android:text="We Value Your Feedback."
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <!--    <AutoCompleteTextView-->
+<!--        android:id="@+id/establishment_name_input"-->
+<!--        android:layout_width="211dp"-->
+<!--        android:layout_height="46dp"-->
+<!--        android:background="@drawable/rounded_edittext"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Establishment Name"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:padding="10dip"-->
+<!--        android:drawablePadding="5dp"-->
+<!--        android:completionThreshold="1"-->
+<!--        android:drawableStart="@drawable/ic_baseline_assignment_24"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.455"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.21" />-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>
